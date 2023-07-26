@@ -43,17 +43,13 @@ int myStrcmp(char* str1, char* str2)
 
 
 
-
-
-
-
-
 int main()
 {
 	const char* p1 = "chenlichena";
 	const char* p2 = "chenlichena";
 	int ret2 = p1 - p2;
 	int ret = myStrcmp((char*)p1,(char*) p2);//-1 0 1
+	//int ret = strcmp(p1, p2);
 	if (ret == 0)
 	{
 		puts("两个字符串一样");
